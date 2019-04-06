@@ -18,7 +18,8 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/articles' do
-    Article.create(params)
+    temp = Article.create(params)
+    binding.pry
     redirect '/articles'
   end
 
