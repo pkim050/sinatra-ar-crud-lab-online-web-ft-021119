@@ -42,11 +42,11 @@ class ApplicationController < Sinatra::Base
   end
 
   patch '/articles/:id' do
-    
+
   end
 
   #Delete
   delete '/articles/:id' do
-    
+
   end
 end
