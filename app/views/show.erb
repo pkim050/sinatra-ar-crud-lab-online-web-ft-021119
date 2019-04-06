@@ -9,9 +9,9 @@
     <p><%= @article[:content] %></p>
     <br>
 
-    <form method="GET" action="/articles">
+    <form action="/articles">
+      <input type="submit" value="Articles">
     </form>
-    <input type="submit" value="Articles">
 
     <form method="POST" action="/articles/<%= @article.id %>/edit">
       <input type="hidden" id="hidden" name="_method" value="patch">
