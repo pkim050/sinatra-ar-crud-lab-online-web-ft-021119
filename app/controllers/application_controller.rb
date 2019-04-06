@@ -9,16 +9,16 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/' do
-    erb :first
+  #  erb :first
   end
 
-  post '/articles/new' do
-    erb :new
-  end
-  #Create
-  #get '/articles/new' do
+  #post '/articles/new' do
   #  erb :new
   #end
+  #Create
+  get '/articles/new' do
+    erb :new
+  end
 
   post '/articles' do
     temp = Article.create(params)
