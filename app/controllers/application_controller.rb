@@ -20,7 +20,7 @@ class ApplicationController < Sinatra::Base
   post '/articles' do
     temp = Article.create(params)
     #binding.pry
-    redirect '/articles/:#{temp.id}'
+    redirect '/articles'
   end
 
   #Read
